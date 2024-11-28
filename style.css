@@ -1,0 +1,114 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #070707;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Nav img {
+    height: 100px; 
+    width: auto;
+}
+
+.Nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.Nav ul li {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s ease;
+}
+
+.Nav ul li:hover {
+    color: #ff6347;
+    transform: scale(1.1);
+}
+
+.Nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.Nav ul li a:hover {
+    background-color: #333333;
+}
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 20px;
+}
+
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {font-size: 11px}
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2EAE0;
+}

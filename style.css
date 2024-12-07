@@ -1,8 +1,10 @@
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
+* { box-sizing: border-box; }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2EAE0;
+}
 
 .Nav {
     display: flex;
@@ -14,7 +16,7 @@ img {vertical-align: middle;}
 }
 
 .Nav img {
-    height: 100px; 
+    height: 70px;
     width: auto;
 }
 
@@ -50,15 +52,17 @@ img {vertical-align: middle;}
     background-color: #333333;
 }
 
-
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-    padding-top: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
 }
 
-
+.mySlides img {
+    height: 550px;
+}
 
 .prev, .next {
     cursor: pointer;
@@ -75,21 +79,14 @@ img {vertical-align: middle;}
     user-select: none;
 }
 
-
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
-
-
-
-
-
 
 .fade {
     animation-name: fade;
@@ -97,18 +94,89 @@ img {vertical-align: middle;}
 }
 
 @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+    from { opacity: .4 } 
+    to { opacity: 1; }
 }
 
-
-@media only screen and (max-width: 300px) {
-    .prev, .next, .text {font-size: 11px}
+.new-arrival h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 30px;
+    font-family: 'Georgia', serif;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F2EAE0;
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.cart {
+    width: 30%;
+    height: 632px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+}
+
+.cart img {
+    width: 100%;
+    height: 358px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.new-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff6347;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+.add-to-cart {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #ff4500;
 }

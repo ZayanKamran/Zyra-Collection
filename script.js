@@ -1,11 +1,13 @@
+
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
-
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
-
 
 function showSlides(n) {
     let i;
@@ -18,8 +20,7 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
 }
 
-
 setInterval(function () {
     slideIndex++;
     showSlides(slideIndex);
-}, 5000); 
+}, 5000);
